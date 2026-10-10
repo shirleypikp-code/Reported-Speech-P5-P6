@@ -1,0 +1,6 @@
+{
+  "name": "Reported Speech Master",
+  "description": "Master direct to reported speech conversions: tense backshifts, question inversions, requests, demands, punctuation rules, with interactive feedback, mastery analytics, LMS sync, and offline support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

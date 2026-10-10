@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+    <linearGradient id="bubbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <!-- Background with safe zone -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  
+  <!-- Outer Speech Bubble (Direct Speech) -->
+  <g filter="url(#shadow)">
+    <path d="M128 140 C128 106.86 154.86 80 188 80 L356 80 C389.14 80 416 106.86 416 140 L416 280 C416 313.14 389.14 340 356 340 L280 340 L220 395 C210 404 195 397 195 384 L195 340 L188 340 C154.86 340 128 313.14 128 280 Z" fill="url(#bubbleGrad)" />
+  </g>
+
+  <!-- Cambridge Single Inverted Comma / Speech Mark ' -->
+  <path d="M196 155 C196 140 208 128 222 128 C234 128 244 137 244 150 C244 175 220 208 194 218 L188 206 C206 198 214 182 216 170 C212 172 206 174 202 174 C194 174 196 165 196 155 Z" fill="#2563eb" />
+  
+  <!-- Arrow indicating conversion (Direct -> Reported) -->
+  <path d="M260 210 L300 210 M290 200 L305 210 L290 220" stroke="#0ea5e9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Secondary Reported Bubble Accent -->
+  <circle cx="346" cy="182" r="14" fill="#3b82f6" />
+  <circle cx="376" cy="214" r="9" fill="#60a5fa" />
+  
+  <!-- Bottom Cambridge Badge -->
+  <rect x="160" y="272" width="192" height="30" rx="8" fill="#e0e7ff" />
+  <text x="256" y="292" fill="#3730a3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="1">CAMBRIDGE ENGLISH</text>
+</svg>
